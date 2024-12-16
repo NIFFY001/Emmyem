@@ -103,7 +103,7 @@ function NavBar() {
               className="p-0 border-none outline-none focus:outline-none lg:hidden flex items-end justify-end w-full mt-7 mb-10 hover:shadow-none"
               onClick={() => setOpen(!open)}
             >
-              <IoMdClose color="#A62429" size={25} />
+              <IoMdClose color="#4E4A42" size={25} />
             </button>
 
             <ul className="flex flex-col lg:flex-row gap-5 lg:items-center">
@@ -123,7 +123,7 @@ function NavBar() {
                     className={({ isActive }) =>
                       `font-bold lg:font-semibold text-[20px] md:text-[30px] lg:text-[12px] xl:text-[14px] lg:uppercase ${
                         isActive
-                          ? "pb-2 border-b border-transparent hover:border-[#A62429] text-black lg:text-black"
+                          ? "pb-2 border-b border-transparent hover:border-[#3B2F2A] text-black lg:text-black"
                           : "text-black"
                       }`
                     }
@@ -133,8 +133,8 @@ function NavBar() {
 
                   {/* Dropdown Logic */}
                   {link.name === "COMPANY" && isDropdownVisible && (
-                    <div className="hidden absolute w-full bg-transparent text-white shadow-md top-18 left-0 lg:flex flex-col z-10">
-                      <div className="flex flex-row py-10 px-20 gap-20 bg-[rgba(117,12,16,0.69)] mt-8 backdrop-blur-sm">
+                    <div className="hidden absolute w-full bg-transparent text-white shadow-md top-18 left-0 lg:flex flex-col z-10  ">
+                      <div className="flex flex-row py-10 px-20 gap-20  mt-8 backdrop-blur-sm">
                         <div className="flex flex-col justify-center font-bold text-[40px]">
                           <h1 className="mb-4">COMPANY</h1>
                         </div>
@@ -199,7 +199,7 @@ function NavBar() {
 
             {/* Contact Us: Mobile */}
             <div className="lg:hidden mt-5">
-              <Link className="flex items-center gap-2 bg-[#A62429] font-semibold text-white rounded-md h-[47px] px-4 text-[12px] justify-center hover:bg-[#750C10]">
+              <Link className="flex items-center gap-2 bg-[#3B2F2A] font-semibold text-white rounded-md h-[47px] px-4 text-[12px] justify-center ">
                 <span>CONTACT US</span>
                 <CiPhone size={20} />
               </Link>
@@ -211,7 +211,7 @@ function NavBar() {
             <Link
               onMouseLeave={notToggleListVisibility}
               onMouseEnter={toggleListVisibility}
-              className="flex items-center gap-2 bg-[#A62429] font-semibold text-white rounded-md h-[47px] px-4 text-[12px] md:text-[15px] justify-center hover:bg-[#750C10]"
+              className="flex items-center gap-2 bg-[#3B2F2A] font-semibold text-white rounded-md h-[47px] px-4 text-[12px] md:text-[15px] justify-center "
             >
               <span>CONTACT US</span>
               <CiPhone size={30} />
