@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-w {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.custom-dots {
+  position: absolute;
+  bottom: 8%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.custom-dots li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.custom-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 30px;
+  height: 5px;
+
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.custom-dots li button::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #b4b3b3;
+}
+
+.custom-dots li.slick-active button::before {
+  background-color: #fff;
+}
+
+.boxShadow-md {
+  box-shadow: -1px 5px 15.6px -2px #00000026;
+}
+
+.backdrop-blur-md {
+  backdrop-filter: blur(3px);
+}
+
+.style-disc {
+  padding-left: 1.5rem; /* Adjust spacing as needed */
+}
+
+.loader {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.slick-dots.custom-dots {
+  bottom: 20px;
+}
