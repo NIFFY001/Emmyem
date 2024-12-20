@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import hero from "../assets/hero.jpeg";
 import arc from "/src/assets/arc.svg";
 import Btn from "./Btn";
+import hero1 from "../assets/hero1.mp4";
+import hero2 from "../assets/hero2.mp4";
 
 function SliderHero() {
   const settings = {
@@ -21,11 +23,15 @@ function SliderHero() {
     <div className="container-slide m-auto overflow-hidden h-[85vh] md:h-[90vh]">
       <Slider {...settings}>
         <div className="relative h-[85vh] md:h-[90vh] outline-none">
-          <img
-            src={hero}
+          <video
+            src={hero1}
             alt="Slide 1"
             className="w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
           />
+
           <SlideContent
             title1="Emmyem Agrobiz Limited"
             image={arc}
@@ -33,10 +39,13 @@ function SliderHero() {
           />
         </div>
         <div className="relative h-[85vh] md:h-[90vh] outline-none">
-          <img
-            src={hero}
+          <video
+            src={hero2}
             alt="Slide 2"
             className="w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
           />
           <SlideContent
             title1="Where Quality Cocoa Meets Global Standards"
@@ -45,10 +54,13 @@ function SliderHero() {
           />
         </div>
         <div className="relative h-[85vh] md:h-[90vh] outline-none">
-          <img
-            src={hero}
+          <video
+            src={hero1}
             alt="Slide 3"
             className="w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
           />
           <SlideContent
             title1="Connecting Cocoa Farmers to Global Markets with Excellence  "

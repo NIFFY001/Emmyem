@@ -136,7 +136,7 @@ function NavBar() {
                     <div className="hidden absolute w-full bg-transparent text-white shadow-md top-18 left-0 lg:flex flex-col z-10  ">
                       <div className="flex flex-row py-10 px-20 gap-20  mt-8 backdrop-blur-sm">
                         <div className="flex flex-col justify-center font-bold text-[40px]">
-                          <h1 className="mb-4">COMPANY</h1>
+                          <h1 className="mb-4">Company</h1>
                         </div>
                         <ul className="flex flex-row items-start leading-[3] gap-40">
                           {companyDropdown.map((company) => (
@@ -247,8 +247,8 @@ const data = [
 const companyDropdown = [
   {
     Items: [
-      { name: "ABOUT US", link: "/services/asset-management" },
-      { name: "ABOUT US", link: "/services/real-estate" },
+      { name: "About Us", link: "/services/asset-management" },
+      { name: "Management Team", link: "/services/real-estate" },
       { name: "", link: "/services/leasing" },
     ],
   },
